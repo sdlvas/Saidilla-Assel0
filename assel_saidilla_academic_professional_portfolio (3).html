@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assel Saidilla | Academic &amp; Professional CV</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    },
+                    colors: {
+                        ivory: '#FAF8F5',
+                        alabaster: '#F3EFEA',
+                        forest: {
+                            50: '#eef5f2',
+                            100: '#d5e6df',
+                            500: '#2d6a4f',
+                            700: '#1b4332',
+                            800: '#132f23',
+                            900: '#0b1d16',
+                        },
+                        ochre: {
+                            400: '#d4a373',
+                            500: '#bc8a5f',
+                            600: '#9c6644',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #FAF8F5;
+            color: #1C2526;
+        }
+
+        /* Subtle Topographic SVG Pattern */
+        .bg-topo {
+            background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 30 Q 30 15, 60 30 T 120 30 M0 60 Q 40 35, 80 60 T 120 60 M0 90 Q 30 105, 60 90 T 120 90' fill='none' stroke='%231b4332' stroke-width='0.6' stroke-opacity='0.05'/%3E%3C/svg%3E");
+        }
+
+        .coord-grid {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(27, 67, 50, 0.035) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(27, 67, 50, 0.035) 1px, transparent 1px);
+        }
+
+        /* Mode highlighting transitions */
+        .profile-card {
+            transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        
+        .dimmed-section {
+            opacity: 0.35;
+            filter: grayscale(40%);
+            transform: scale(0.99);
+        }
+
+        .highlighted-section {
+            outline: 2px solid #2d6a4f;
+            box-shadow: 0 20px 35px -10px rgba(27, 67, 50, 0.12);
+        }
+
+        /* Editable outline when Inline Edit Mode is active */
+        [contenteditable="true"] {
+            outline: 2px dashed #bc8a5f;
+            outline-offset: 4px;
+            background-color: rgba(212, 163, 115, 0.08);
+            border-radius: 4px;
+            cursor: text;
+        }
+
+        /* Print Media Query for Clean Paper CV */
+        @media print {
+            body {
+                background: #ffffff !important;
+                color: #000000 !important;
+                font-size: 11pt;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .dimmed-section {
+                opacity: 1 !important;
+                filter: none !important;
+                transform: none !important;
+            }
+            .print-break-inside-avoid {
+                break-inside: avoid;
+            }
+            main {
+                padding-top: 0 !important;
+            }
+            .shadow-xl, .shadow-lg, .shadow-md, .shadow-sm {
+                box-shadow: none !important;
+                border: 1px solid #e5e7eb !important;
+            }
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:"Plus Jakarta Sans", system-ui, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:"JetBrains Mono", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.inset-0{inset:0px}.-right-12{right:-3rem}.-right-24{right:-6rem}.-top-12{top:-3rem}.-top-24{top:-6rem}.top-0{top:0px}.z-10{z-index:10}.z-40{z-index:40}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mr-1{margin-right:0.25rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-3\.5{height:0.875rem}.h-4{height:1rem}.h-5{height:1.25rem}.h-56{height:14rem}.h-80{height:20rem}.h-9{height:2.25rem}.h-full{height:100%}.w-10{width:2.5rem}.w-2{width:0.5rem}.w-3\.5{width:0.875rem}.w-4{width:1rem}.w-5{width:1.25rem}.w-56{width:14rem}.w-80{width:20rem}.w-9{width:2.25rem}.w-full{width:100%}.max-w-3xl{max-width:48rem}.max-w-5xl{max-width:64rem}.max-w-6xl{max-width:72rem}.max-w-md{max-width:28rem}.max-w-xl{max-width:36rem}.shrink-0{flex-shrink:0}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.space-y-10 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2.5rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.self-start{align-self:flex-start}.overflow-hidden{overflow:hidden}.scroll-smooth{scroll-behavior:smooth}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-amber-200{--tw-border-opacity:1;border-color:rgb(253 230 138 / var(--tw-border-opacity, 1))}.border-amber-200\/60{border-color:rgb(253 230 138 / 0.6)}.border-forest-100{--tw-border-opacity:1;border-color:rgb(213 230 223 / var(--tw-border-opacity, 1))}.border-forest-700\/10{border-color:rgb(27 67 50 / 0.1)}.border-ochre-500\/15{border-color:rgb(188 138 95 / 0.15)}.border-stone-100{--tw-border-opacity:1;border-color:rgb(245 245 244 / var(--tw-border-opacity, 1))}.border-stone-200{--tw-border-opacity:1;border-color:rgb(231 229 228 / var(--tw-border-opacity, 1))}.border-stone-200\/70{border-color:rgb(231 229 228 / 0.7)}.border-stone-200\/80{border-color:rgb(231 229 228 / 0.8)}.border-stone-200\/90{border-color:rgb(231 229 228 / 0.9)}.border-stone-300{--tw-border-opacity:1;border-color:rgb(214 211 209 / var(--tw-border-opacity, 1))}.border-stone-300\/80{border-color:rgb(214 211 209 / 0.8)}.border-white\/10{border-color:rgb(255 255 255 / 0.1)}.border-white\/15{border-color:rgb(255 255 255 / 0.15)}.bg-alabaster{--tw-bg-opacity:1;background-color:rgb(243 239 234 / var(--tw-bg-opacity, 1))}.bg-alabaster\/90{background-color:rgb(243 239 234 / 0.9)}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.bg-amber-50\/50{background-color:rgb(255 251 235 / 0.5)}.bg-amber-50\/80{background-color:rgb(255 251 235 / 0.8)}.bg-emerald-400{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-emerald-700\/10{background-color:rgb(4 120 87 / 0.1)}.bg-emerald-800{--tw-bg-opacity:1;background-color:rgb(6 95 70 / var(--tw-bg-opacity, 1))}.bg-forest-50{--tw-bg-opacity:1;background-color:rgb(238 245 242 / var(--tw-bg-opacity, 1))}.bg-forest-50\/70{background-color:rgb(238 245 242 / 0.7)}.bg-forest-700{--tw-bg-opacity:1;background-color:rgb(27 67 50 / var(--tw-bg-opacity, 1))}.bg-forest-700\/10{background-color:rgb(27 67 50 / 0.1)}.bg-forest-900{--tw-bg-opacity:1;background-color:rgb(11 29 22 / var(--tw-bg-opacity, 1))}.bg-ivory{--tw-bg-opacity:1;background-color:rgb(250 248 245 / var(--tw-bg-opacity, 1))}.bg-ivory\/90{background-color:rgb(250 248 245 / 0.9)}.bg-ochre-500{--tw-bg-opacity:1;background-color:rgb(188 138 95 / var(--tw-bg-opacity, 1))}.bg-ochre-500\/15{background-color:rgb(188 138 95 / 0.15)}.bg-ochre-600{--tw-bg-opacity:1;background-color:rgb(156 102 68 / var(--tw-bg-opacity, 1))}.bg-stone-900\/60{background-color:rgb(28 25 23 / 0.6)}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-white\/5{background-color:rgb(255 255 255 / 0.05)}.p-1{padding:0.25rem}.p-1\.5{padding:0.375rem}.p-2{padding:0.5rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.pb-20{padding-bottom:5rem}.pb-3{padding-bottom:0.75rem}.pb-4{padding-bottom:1rem}.pb-5{padding-bottom:1.25rem}.pb-6{padding-bottom:1.5rem}.pt-1{padding-top:0.25rem}.pt-2{padding-top:0.5rem}.pt-3{padding-top:0.75rem}.pt-8{padding-top:2rem}.text-center{text-align:center}.font-mono{font-family:"JetBrains Mono", monospace}.font-sans{font-family:"Plus Jakarta Sans", system-ui, sans-serif}.font-serif{font-family:"Cormorant Garamond", Georgia, serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-\[1\.08\]{line-height:1.08}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-emerald-300{--tw-text-opacity:1;color:rgb(110 231 183 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87 / var(--tw-text-opacity, 1))}.text-emerald-800{--tw-text-opacity:1;color:rgb(6 95 70 / var(--tw-text-opacity, 1))}.text-forest-700{--tw-text-opacity:1;color:rgb(27 67 50 / var(--tw-text-opacity, 1))}.text-forest-800{--tw-text-opacity:1;color:rgb(19 47 35 / var(--tw-text-opacity, 1))}.text-forest-900{--tw-text-opacity:1;color:rgb(11 29 22 / var(--tw-text-opacity, 1))}.text-ivory{--tw-text-opacity:1;color:rgb(250 248 245 / var(--tw-text-opacity, 1))}.text-ochre-400{--tw-text-opacity:1;color:rgb(212 163 115 / var(--tw-text-opacity, 1))}.text-ochre-600{--tw-text-opacity:1;color:rgb(156 102 68 / var(--tw-text-opacity, 1))}.text-stone-300{--tw-text-opacity:1;color:rgb(214 211 209 / var(--tw-text-opacity, 1))}.text-stone-400{--tw-text-opacity:1;color:rgb(168 162 158 / var(--tw-text-opacity, 1))}.text-stone-500{--tw-text-opacity:1;color:rgb(120 113 108 / var(--tw-text-opacity, 1))}.text-stone-600{--tw-text-opacity:1;color:rgb(87 83 78 / var(--tw-text-opacity, 1))}.text-stone-700{--tw-text-opacity:1;color:rgb(68 64 60 / var(--tw-text-opacity, 1))}.text-stone-800{--tw-text-opacity:1;color:rgb(41 37 36 / var(--tw-text-opacity, 1))}.text-stone-900{--tw-text-opacity:1;color:rgb(28 25 23 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.selection\:bg-forest-700 *::selection{--tw-bg-opacity:1;background-color:rgb(27 67 50 / var(--tw-bg-opacity, 1))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:bg-forest-700::selection{--tw-bg-opacity:1;background-color:rgb(27 67 50 / var(--tw-bg-opacity, 1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:bg-forest-800:hover{--tw-bg-opacity:1;background-color:rgb(19 47 35 / var(--tw-bg-opacity, 1))}.hover\:bg-ochre-600:hover{--tw-bg-opacity:1;background-color:rgb(156 102 68 / var(--tw-bg-opacity, 1))}.hover\:bg-stone-100:hover{--tw-bg-opacity:1;background-color:rgb(245 245 244 / var(--tw-bg-opacity, 1))}.hover\:bg-stone-200\/80:hover{background-color:rgb(231 229 228 / 0.8)}.hover\:bg-stone-50:hover{--tw-bg-opacity:1;background-color:rgb(250 250 249 / var(--tw-bg-opacity, 1))}.hover\:bg-white\/20:hover{background-color:rgb(255 255 255 / 0.2)}.hover\:text-forest-800:hover{--tw-text-opacity:1;color:rgb(19 47 35 / var(--tw-text-opacity, 1))}.hover\:text-stone-700:hover{--tw-text-opacity:1;color:rgb(68 64 60 / var(--tw-text-opacity, 1))}.focus\:border-forest-700:focus{--tw-border-opacity:1;border-color:rgb(27 67 50 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}@media (min-width: 640px){.sm\:inline{display:inline}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:items-end{align-items:flex-end}.sm\:items-center{align-items:center}.sm\:self-auto{align-self:auto}.sm\:p-10{padding:2.5rem}.sm\:p-5{padding:1.25rem}.sm\:p-6{padding:1.5rem}.sm\:p-7{padding:1.75rem}.sm\:p-8{padding:2rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-5xl{font-size:3rem;line-height:1}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}}@media (min-width: 768px){.md\:flex{display:flex}.md\:hidden{display:none}.md\:flex-row{flex-direction:row}.md\:items-center{align-items:center}}@media (min-width: 1024px){.lg\:col-span-4{grid-column:span 4 / span 4}.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:col-span-8{grid-column:span 8 / span 8}.lg\:w-auto{width:auto}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:flex-row{flex-direction:row}.lg\:items-center{align-items:center}.lg\:p-12{padding:3rem}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:text-6xl{font-size:3.75rem;line-height:1}}</style></head>
+<body class="font-sans antialiased bg-topo selection:bg-forest-700 selection:text-white">
+
+    <!-- Top Sticky Navigation -->
+    <header class="sticky top-0 z-40 backdrop-blur-md bg-ivory/90 border-b border-stone-200/80 no-print">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+            <!-- Brand & Geographic Coordinates -->
+            <div class="flex items-center gap-3">
+                <div class="w-9 h-9 rounded-lg bg-forest-700 text-ivory flex items-center justify-center font-serif font-bold text-xl shadow-sm">
+                    AS
+                </div>
+                <div>
+                    <span class="font-serif font-bold text-lg tracking-tight text-forest-900 block leading-none">Assel Saidilla</span>
+                    <span class="font-mono text-[10px] text-stone-500 tracking-wider">ASTANA, KAZAKHSTAN</span>
+                </div>
+            </div>
+
+            <!-- Interactive Audience Perspective Filter -->
+            <div class="hidden md:flex items-center bg-alabaster p-1 rounded-xl border border-stone-200/80 text-xs font-medium">
+                <button onclick="setViewMode('all')" id="btn-mode-all" class="mode-btn px-3 py-1.5 rounded-lg bg-forest-700 text-white shadow-sm transition-all">
+                    Complete CV
+                </button>
+                <button onclick="setViewMode('academic')" id="btn-mode-academic" class="mode-btn px-3 py-1.5 rounded-lg text-stone-600 hover:text-forest-800 transition-all flex items-center gap-1.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="graduation-cap" aria-hidden="true" class="lucide lucide-graduation-cap w-3.5 h-3.5"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
+                    For Professors &amp; Admissions
+                </button>
+                <button onclick="setViewMode('industry')" id="btn-mode-industry" class="mode-btn px-3 py-1.5 rounded-lg text-stone-600 hover:text-forest-800 transition-all flex items-center gap-1.5">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="briefcase" aria-hidden="true" class="lucide lucide-briefcase w-3.5 h-3.5"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg>
+                    For Employers
+                </button>
+            </div>
+
+            <!-- Action Controls -->
+            <div class="flex items-center gap-2">
+                <button onclick="toggleInlineEdit()" id="btn-inline-edit" class="px-3 py-1.5 rounded-lg border border-stone-300 text-stone-700 hover:bg-stone-100 text-xs font-medium flex items-center gap-1.5 transition" title="Click to edit any text directly on the page">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="pen-line" aria-hidden="true" class="lucide lucide-pen-line w-3.5 h-3.5 text-ochre-600"><path d="M13 21h8"></path><path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z"></path></svg>
+                    <span id="edit-btn-label" class="hidden sm:inline">Finish Editing</span>
+                </button>
+                <button onclick="window.print()" class="px-3.5 py-1.5 rounded-lg bg-forest-700 hover:bg-forest-800 text-white text-xs font-medium flex items-center gap-1.5 shadow-sm transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="printer" aria-hidden="true" class="lucide lucide-printer w-3.5 h-3.5"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><path d="M6 9V3a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v6"></path><rect x="6" y="14" width="12" height="8" rx="1"></rect></svg>
+                    <span>Print / Save PDF</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Perspective Switcher Bar -->
+        <div class="md:hidden flex items-center justify-center gap-1 bg-alabaster px-3 py-2 border-t border-stone-200 text-xs">
+            <span class="text-stone-500 mr-1 font-medium">View:</span>
+            <button onclick="setViewMode('all')" id="m-btn-mode-all" class="px-2.5 py-1 rounded-md bg-forest-700 text-white font-medium">Complete CV</button>
+            <button onclick="setViewMode('academic')" id="m-btn-mode-academic" class="px-2.5 py-1 rounded-md text-stone-600 font-medium">For Professors</button>
+            <button onclick="setViewMode('industry')" id="m-btn-mode-industry" class="px-2.5 py-1 rounded-md text-stone-600 font-medium">For Employers</button>
+        </div>
+    </header>
+
+    <!-- Edit Mode Banner Notification (Hidden by default) -->
+    <div id="edit-mode-banner" class="bg-ochre-600 text-white text-xs py-2 px-4 text-center no-print">
+        <div class="max-w-5xl mx-auto flex flex-wrap items-center justify-between gap-2">
+            <span class="flex items-center gap-2 font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="sparkles" aria-hidden="true" class="lucide lucide-sparkles w-4 h-4"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>
+                <strong>Live Edit Mode Enabled:</strong> Click on any outlined text block to edit your university name, GPA, or descriptions directly.
+            </span>
+            <button onclick="toggleInlineEdit()" class="px-2.5 py-0.5 bg-white text-ochre-600 font-semibold rounded shadow-sm hover:bg-stone-100">
+                Done Editing
+            </button>
+        </div>
+    </div>
+
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-20 space-y-10">
+
+        <!-- HERO / EXECUTIVE & ACADEMIC INTRODUCTION -->
+        <section class="relative rounded-3xl bg-white border border-stone-200/90 shadow-sm overflow-hidden coord-grid p-6 sm:p-10 lg:p-12">
+            <div class="absolute -top-24 -right-24 w-80 h-80 rounded-full border border-forest-700/10 pointer-events-none"></div>
+            <div class="absolute -top-12 -right-12 w-56 h-56 rounded-full border border-ochre-500/15 pointer-events-none"></div>
+
+            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-8 space-y-5">
+                    <div class="inline-flex flex-wrap items-center gap-2">
+                        <span class="px-3 py-1 rounded-full bg-forest-50 text-forest-700 border border-forest-100 font-mono text-xs font-medium flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+                            B.Sc. Scientific Geography (Final Year • 2027)
+                        </span>
+                        <span class="px-3 py-1 rounded-full bg-amber-50/80 text-ochre-600 border border-amber-200/60 font-mono text-xs font-medium">
+                            Real Estate Accountant &amp; Administrator
+                        </span>
+                    </div>
+
+                    <div class="space-y-2">
+                        <h1 class="editable font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-forest-900 tracking-tight leading-[1.08]" contenteditable="true">
+                            Assel Saidilla
+                        </h1>
+                        <p class="editable text-base sm:text-lg font-medium text-forest-700" contenteditable="true">
+                            Scientific Geography Undergraduate &nbsp;|&nbsp; Real Estate Accountant &amp; Administrator &nbsp;|&nbsp; Prospective M.Sc. Applicant in Sustainability &amp; ESG
+                        </p>
+                    </div>
+
+                    <p class="editable text-stone-600 text-sm sm:text-base leading-relaxed max-w-3xl" contenteditable="true">
+                        Final-year Bachelor of Science student in <strong>Scientific Geography</strong> based in Astana, Kazakhstan, combining academic grounding in physical &amp; economic geography and environmental management with hands-on professional experience as a <strong>Real Estate Accountant and Property Administrator</strong>. Passionate about connecting environmental responsibility, sustainable resource management, and ESG principles with practical financial operations and modern AI-assisted workflows.
+                    </p>
+
+                    <!-- Quick Action Navigation Buttons -->
+                    <div class="pt-1 flex flex-wrap items-center gap-3 no-print">
+                        <a href="#academic-section" onclick="setViewMode('academic')" class="px-4 py-2.5 rounded-xl bg-forest-700 hover:bg-forest-800 text-white text-xs sm:text-sm font-medium flex items-center gap-2 shadow-sm transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="graduation-cap" aria-hidden="true" class="lucide lucide-graduation-cap w-4 h-4"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
+                            Academic Background
+                        </a>
+                        <a href="#experience-section" onclick="setViewMode('industry')" class="px-4 py-2.5 rounded-xl bg-alabaster hover:bg-stone-200/80 text-forest-900 border border-stone-300/80 text-xs sm:text-sm font-medium flex items-center gap-2 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="building-2" aria-hidden="true" class="lucide lucide-building-2 w-4 h-4 text-forest-700"><path d="M10 12h4"></path><path d="M10 8h4"></path><path d="M14 21v-3a2 2 0 0 0-4 0v3"></path><path d="M6 10H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-2"></path><path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"></path></svg>
+                            Work Experience
+                        </a>
+                        <a href="#skills-section" class="px-4 py-2.5 rounded-xl bg-white hover:bg-stone-50 text-stone-700 border border-stone-200 text-xs sm:text-sm font-medium flex items-center gap-2 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="languages" aria-hidden="true" class="lucide lucide-languages w-4 h-4 text-ochre-600"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg>
+                            Skills &amp; 5 Languages
+                        </a>
+                        <a href="#contact-section" class="px-4 py-2.5 rounded-xl text-stone-600 hover:text-forest-800 text-xs sm:text-sm font-medium flex items-center gap-1.5 transition">
+                            <span>Contact Info</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="arrow-down-right" aria-hidden="true" class="lucide lucide-arrow-down-right w-4 h-4"><path d="m7 7 10 10"></path><path d="M17 7v10H7"></path></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Column: Key Dossier Summary Card -->
+                <div class="lg:col-span-4 bg-alabaster/90 rounded-2xl p-5 sm:p-6 border border-stone-200/90 space-y-4">
+                    <div class="flex items-center justify-between border-b border-stone-200 pb-3">
+                        <span class="font-mono text-xs uppercase tracking-wider text-stone-500 font-semibold">Profile Overview</span>
+                        <span class="font-mono text-xs text-forest-700 font-medium flex items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" aria-hidden="true" class="lucide lucide-map-pin w-3.5 h-3.5"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg> Astana, KZ
+                        </span>
+                    </div>
+
+                    <div class="space-y-3 text-xs sm:text-sm">
+                        <div class="flex items-start gap-3">
+                            <div class="p-2 rounded-lg bg-forest-700/10 text-forest-700 mt-0.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="book-open" aria-hidden="true" class="lucide lucide-book-open w-4 h-4"><path d="M12 5v16"></path><path d="M20.001 19A2 2 0 0022 17V5a2 2 0 00-1.999-2L16 3.002A5 5 0 0012 5a5 5 0 00-4-2H4a2 2 0 00-2 2v12a2 2 0 001.999 2H8a5 5 0 014 2 5 5 0 014-2z"></path></svg>
+                            </div>
+                            <div>
+                                <div class="text-stone-400 text-[11px] font-mono uppercase">Education</div>
+                                <div class="editable font-semibold text-stone-800" contenteditable="true">B.Sc. in Scientific Geography</div>
+                                <div class="editable text-xs text-stone-500" contenteditable="true">4th Year Undergraduate (Graduating 2027)</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="p-2 rounded-lg bg-ochre-500/15 text-ochre-600 mt-0.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="briefcase" aria-hidden="true" class="lucide lucide-briefcase w-4 h-4"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg>
+                            </div>
+                            <div>
+                                <div class="text-stone-400 text-[11px] font-mono uppercase">Current Position</div>
+                                <div class="editable font-semibold text-stone-800" contenteditable="true">Accountant &amp; Property Administrator</div>
+                                <div class="editable text-xs text-stone-500" contenteditable="true">Commercial &amp; Residential Real Estate (2025–Present)</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="p-2 rounded-lg bg-emerald-700/10 text-emerald-800 mt-0.5">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="compass" aria-hidden="true" class="lucide lucide-compass w-4 h-4"><circle cx="12" cy="12" r="10"></circle><path d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"></path></svg>
+                            </div>
+                            <div>
+                                <div class="text-stone-400 text-[11px] font-mono uppercase">Master's Interest</div>
+                                <div class="editable font-semibold text-stone-800" contenteditable="true">Sustainability, ESG &amp; Resource Mgmt</div>
+                                <div class="editable text-xs text-stone-500" contenteditable="true">Environmental Management &amp; Climate Policy</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-2 border-t border-stone-200 flex items-center justify-between text-xs">
+                        <span class="text-stone-500 font-medium">Languages:</span>
+                        <div class="flex flex-wrap justify-end gap-1 font-mono text-[10px]">
+                            <span class="px-1.5 py-0.5 rounded bg-white border border-stone-200 text-stone-700">KAZ</span>
+                            <span class="px-1.5 py-0.5 rounded bg-white border border-stone-200 text-stone-700">RUS</span>
+                            <span class="px-1.5 py-0.5 rounded bg-forest-700 text-white">ENG</span>
+                            <span class="px-1.5 py-0.5 rounded bg-amber-50 border border-amber-200 text-ochre-600">KOR (A1)</span>
+                            <span class="px-1.5 py-0.5 rounded bg-amber-50 border border-amber-200 text-ochre-600">ESP (A1)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 01: EDUCATION & SCIENTIFIC GEOGRAPHY -->
+        <section id="academic-section" data-category="academic" class="profile-card space-y-6">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 border-b border-stone-200 pb-4">
+                <div>
+                    <div class="flex items-center gap-2 text-forest-700 font-mono text-xs uppercase tracking-widest font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="graduation-cap" aria-hidden="true" class="lucide lucide-graduation-cap w-4 h-4"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"></path><path d="M22 10v6"></path><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path></svg>
+                        <span>Section 01 // Academic Background</span>
+                    </div>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest-900 mt-1">Education &amp; Scientific Geography Studies</h2>
+                </div>
+                <span class="font-mono text-xs text-stone-500 bg-alabaster px-3 py-1 rounded-full border border-stone-200 self-start sm:self-auto">
+                    2023 – 2027 (Expected)
+                </span>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 sm:p-8 border border-stone-200/90 shadow-sm space-y-6">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-5 border-b border-stone-100">
+                    <div class="space-y-1">
+                        <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-wider text-ochre-600 font-semibold">
+                            <span>Bachelor's Degree Program</span>
+                            <span>•</span>
+                            <span>4th Year Undergraduate</span>
+                        </div>
+                        <h3 class="editable font-serif text-2xl sm:text-3xl font-bold text-stone-900" contenteditable="true">
+                            Bachelor of Science in Scientific Geography
+                        </h3>
+                        <p class="editable text-sm text-stone-600 flex items-center gap-2" contenteditable="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="landmark" aria-hidden="true" class="lucide lucide-landmark w-4 h-4 text-forest-700 shrink-0"><path d="M10 18v-7"></path><path d="M11.119 2.205a2 2 0 0 1 1.762 0l7.84 3.846A.5.5 0 0 1 20.5 7h-17a.5.5 0 0 1-.22-.949z"></path><path d="M14 18v-7"></path><path d="M18 18v-7"></path><path d="M3 22h18"></path><path d="M6 18v-7"></path></svg>
+                            <span>Astana, Kazakhstan (Eurasian National University)</span>
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-xl bg-forest-50 text-forest-800 font-mono text-xs font-medium border border-forest-100">
+                            Natural &amp; Socio-Economic Geography
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Grounded Academic Summary & Coursework -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+                    <div class="lg:col-span-7 space-y-3">
+                        <h4 class="text-xs font-mono uppercase tracking-wider text-stone-400 font-semibold">
+                            Academic Focus &amp; Undergraduate Training
+                        </h4>
+                        <p class="editable text-sm text-stone-600 leading-relaxed" contenteditable="true">
+                            My undergraduate training in <strong>Scientific Geography</strong> provides a broad analytical understanding of how natural landscapes, climate systems, and human economic activities interact. Rather than narrow technical specialization alone, my studies emphasize systemic thinking—evaluating regional resource distribution, environmental protection, and sustainable territorial development.
+                        </p>
+                        <p class="editable text-sm text-stone-600 leading-relaxed" contenteditable="true">
+                            Alongside core lectures and university fieldwork, I have developed a strong interest in how geographical and environmental concepts apply to real-world corporate governance, urban infrastructure, and resource efficiency.
+                        </p>
+                    </div>
+
+                    <div class="lg:col-span-5 bg-ivory rounded-2xl p-5 border border-stone-200/80 space-y-3">
+                        <h4 class="text-xs font-mono uppercase tracking-wider text-forest-700 font-semibold">
+                            Relevant University Coursework
+                        </h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="editable px-3 py-1.5 rounded-lg bg-white border border-stone-200 text-xs font-medium text-stone-700" contenteditable="true">Physical Geography</span>
+                            <span class="editable px-3 py-1.5 rounded-lg bg-white border border-stone-200 text-xs font-medium text-stone-700" contenteditable="true">Economic &amp; Social Geography</span>
+                            <span class="editable px-3 py-1.5 rounded-lg bg-white border border-stone-200 text-xs font-medium text-stone-700" contenteditable="true">Geoecology &amp; Environmental Protection</span>
+                            <span class="editable px-3 py-1.5 rounded-lg bg-white border border-stone-200 text-xs font-medium text-stone-700" contenteditable="true">Natural Resource Management</span>
+                            <span class="editable px-3 py-1.5 rounded-lg bg-white border border-stone-200 text-xs font-medium text-stone-700" contenteditable="true">Sustainable Development Principles</span>
+                            <span class="editable px-3 py-1.5 rounded-lg bg-white border border-stone-200 text-xs font-medium text-stone-700" contenteditable="true">Regional Geography of Kazakhstan</span>
+                            <span class="editable px-3 py-1.5 rounded-lg bg-white border border-stone-200 text-xs font-medium text-stone-700" contenteditable="true">Foundational Cartography &amp; GIS Basics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Graduate Study Motivation Banner -->
+                <div class="rounded-2xl bg-forest-900 text-ivory p-6 sm:p-7 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 print-break-inside-avoid">
+                    <div class="space-y-2 max-w-3xl">
+                        <div class="inline-flex items-center gap-2 text-ochre-400 font-mono text-xs uppercase tracking-wider">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="sparkles" aria-hidden="true" class="lucide lucide-sparkles w-3.5 h-3.5"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"></path><path d="M20 2v4"></path><path d="M22 4h-4"></path><circle cx="4" cy="20" r="2"></circle></svg>
+                            <span>Prospective Master's Degree Direction</span>
+                        </div>
+                        <h4 class="editable font-serif text-2xl font-semibold text-white" contenteditable="true">
+                            M.Sc. in Sustainable Resources, Environmental Management &amp; ESG
+                        </h4>
+                        <p class="editable text-xs sm:text-sm text-stone-300 leading-relaxed" contenteditable="true">
+                            Motivated to pursue graduate studies where I can combine my academic background in Scientific Geography with my practical experience in financial accounting and property administration—focusing on corporate sustainability, ESG reporting, climate risk assessment, and responsible resource management.
+                        </p>
+                    </div>
+                    <div class="shrink-0 grid grid-cols-2 gap-2.5 w-full lg:w-auto text-center font-mono text-xs">
+                        <div class="p-3 rounded-xl bg-white/10 border border-white/10">
+                            <div class="text-ochre-400 font-bold text-sm">ESG &amp; Policy</div>
+                            <div class="text-[10px] text-stone-300 mt-0.5">Corporate Sustainability</div>
+                        </div>
+                        <div class="p-3 rounded-xl bg-white/10 border border-white/10">
+                            <div class="text-emerald-300 font-bold text-sm">Geography</div>
+                            <div class="text-[10px] text-stone-300 mt-0.5">Resource Systems</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 02: PROFESSIONAL EXPERIENCE -->
+        <section id="experience-section" data-category="industry" class="profile-card space-y-6">
+            <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-2 border-b border-stone-200 pb-4">
+                <div>
+                    <div class="flex items-center gap-2 text-ochre-600 font-mono text-xs uppercase tracking-widest font-semibold">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="briefcase" aria-hidden="true" class="lucide lucide-briefcase w-4 h-4"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg>
+                        <span>Section 02 // Professional Experience</span>
+                    </div>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest-900 mt-1">Work Experience &amp; Financial Operations</h2>
+                </div>
+                <span class="font-mono text-xs text-forest-800 bg-forest-50 px-3 py-1 rounded-full border border-forest-100 self-start sm:self-auto">
+                    2025 – Present • Active Role
+                </span>
+            </div>
+
+            <div class="bg-white rounded-2xl p-6 sm:p-8 border border-stone-200/90 shadow-sm space-y-6">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-stone-100">
+                    <div>
+                        <div class="text-xs font-mono uppercase tracking-wider text-forest-700 font-semibold">
+                            Real Estate Portfolio &amp; Financial Administration
+                        </div>
+                        <h3 class="editable font-serif text-2xl sm:text-3xl font-bold text-stone-900 mt-0.5" contenteditable="true">
+                            Accountant &amp; Real Estate Administrator
+                        </h3>
+                        <p class="editable text-sm text-stone-600 flex items-center gap-2 mt-1" contenteditable="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" aria-hidden="true" class="lucide lucide-map-pin w-4 h-4 text-ochre-600"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span>Astana, Kazakhstan &nbsp;|&nbsp; Commercial &amp; Residential Property Management</span>
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-lg bg-alabaster text-stone-700 font-mono text-xs border border-stone-200">Bookkeeping &amp; Finance</span>
+                        <span class="px-3 py-1 rounded-lg bg-alabaster text-stone-700 font-mono text-xs border border-stone-200">Utility Calculations</span>
+                        <span class="px-3 py-1 rounded-lg bg-forest-50 text-forest-800 font-mono text-xs border border-forest-100">AI Workflow Tools</span>
+                    </div>
+                </div>
+
+                <!-- 3 Pillars of Impact -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                    <!-- Pillar 1 -->
+                    <div class="p-5 rounded-2xl bg-ivory border border-stone-200/80 space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-forest-700 text-white flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="receipt" aria-hidden="true" class="lucide lucide-receipt w-5 h-5"><path d="M12 17V7"></path><path d="M16 8h-6a2 2 0 0 0 0 4h4a2 2 0 0 1 0 4H8"></path><path d="M4 3a1 1 0 0 1 1-1 1.3 1.3 0 0 1 .7.2l.933.6a1.3 1.3 0 0 0 1.4 0l.934-.6a1.3 1.3 0 0 1 1.4 0l.933.6a1.3 1.3 0 0 0 1.4 0l.933-.6a1.3 1.3 0 0 1 1.4 0l.934.6a1.3 1.3 0 0 0 1.4 0l.933-.6A1.3 1.3 0 0 1 19 2a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1 1.3 1.3 0 0 1-.7-.2l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.934.6a1.3 1.3 0 0 1-1.4 0l-.933-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-1.4 0l-.934-.6a1.3 1.3 0 0 0-1.4 0l-.933.6a1.3 1.3 0 0 1-.7.2 1 1 0 0 1-1-1z"></path></svg>
+                        </div>
+                        <h4 class="editable font-serif text-xl font-bold text-stone-900" contenteditable="true">
+                            Accounting &amp; Lease Administration
+                        </h4>
+                        <p class="editable text-xs sm:text-sm text-stone-600 leading-relaxed" contenteditable="true">
+                            Manages day-to-day financial bookkeeping, rent invoicing, payment tracking, and documentation for a portfolio of residential apartments and commercial spaces.
+                        </p>
+                        <ul class="text-xs text-stone-600 space-y-1.5 pt-2 border-t border-stone-200/70">
+                            <li class="editable flex items-start gap-2" contenteditable="true">
+                                <span class="text-forest-700 font-bold">•</span>
+                                <span>Monthly financial reconciliation and expense tracking.</span>
+                            </li>
+                            <li class="editable flex items-start gap-2" contenteditable="true">
+                                <span class="text-forest-700 font-bold">•</span>
+                                <span>Tenant lease agreements, renewals, and account records.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Pillar 2 -->
+                    <div class="p-5 rounded-2xl bg-ivory border border-stone-200/80 space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-ochre-600 text-white flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="gauge" aria-hidden="true" class="lucide lucide-gauge w-5 h-5"><path d="m12 14 4-4"></path><path d="M3.34 19a10 10 0 1 1 17.32 0"></path></svg>
+                        </div>
+                        <h4 class="editable font-serif text-xl font-bold text-stone-900" contenteditable="true">
+                            Commercial Utility &amp; Space Calculations
+                        </h4>
+                        <p class="editable text-xs sm:text-sm text-stone-600 leading-relaxed" contenteditable="true">
+                            Calculates monthly utility charges (heating, electricity, water, and building maintenance) across commercial tenants based on meter readings and floor-area allocation.
+                        </p>
+                        <ul class="text-xs text-stone-600 space-y-1.5 pt-2 border-t border-stone-200/70">
+                            <li class="editable flex items-start gap-2" contenteditable="true">
+                                <span class="text-ochre-600 font-bold">•</span>
+                                <span>Accurate pro-rata utility tariff and resource cost breakdowns.</span>
+                            </li>
+                            <li class="editable flex items-start gap-2" contenteditable="true">
+                                <span class="text-ochre-600 font-bold">•</span>
+                                <span>Working with floor plans to organize commercial space leasing.</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Pillar 3 -->
+                    <div class="p-5 rounded-2xl bg-ivory border border-stone-200/80 space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-800 text-white flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="cpu" aria-hidden="true" class="lucide lucide-cpu w-5 h-5"><path d="M12 20v2"></path><path d="M12 2v2"></path><path d="M17 20v2"></path><path d="M17 2v2"></path><path d="M2 12h2"></path><path d="M2 17h2"></path><path d="M2 7h2"></path><path d="M20 12h2"></path><path d="M20 17h2"></path><path d="M20 7h2"></path><path d="M7 20v2"></path><path d="M7 2v2"></path><rect x="4" y="4" width="16" height="16" rx="2"></rect><rect x="8" y="8" width="8" height="8" rx="1"></rect></svg>
+                        </div>
+                        <h4 class="editable font-serif text-xl font-bold text-stone-900" contenteditable="true">
+                            AI-Assisted Workflow Optimization
+                        </h4>
+                        <p class="editable text-xs sm:text-sm text-stone-600 leading-relaxed" contenteditable="true">
+                            Uses modern AI assistants and Vibe coding tools to build custom calculators, organize property databases, and speed up routine administrative and accounting tasks.
+                        </p>
+                        <ul class="text-xs text-stone-600 space-y-1.5 pt-2 border-t border-stone-200/70">
+                            <li class="editable flex items-start gap-2" contenteditable="true">
+                                <span class="text-emerald-700 font-bold">•</span>
+                                <span>Streamlines monthly billing and structured spreadsheet templates.</span>
+                            </li>
+                            <li class="editable flex items-start gap-2" contenteditable="true">
+                                <span class="text-emerald-700 font-bold">•</span>
+                                <span>Reduces manual calculation time and improves reporting clarity.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Synthesis Note for Admissions & Employers -->
+                <div class="rounded-xl bg-alabaster p-4 sm:p-5 border border-stone-200/90 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div class="flex items-start gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="git-merge" aria-hidden="true" class="lucide lucide-git-merge w-5 h-5 text-forest-700 shrink-0 mt-0.5"><circle cx="18" cy="18" r="3"></circle><circle cx="6" cy="6" r="3"></circle><path d="M6 21V9a9 9 0 0 0 9 9"></path></svg>
+                        <p class="editable text-xs sm:text-sm text-stone-700" contenteditable="true">
+                            <strong>Bridging Theory &amp; Practice:</strong> Balancing full-time university studies in Scientific Geography with real-world responsibility as an Accountant &amp; Property Administrator has taught me strong time management, financial discipline, and how building resource consumption (heating, electricity, water) translates into operational metrics.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 03: SKILLS & LANGUAGES (Honest & Grounded) -->
+        <section id="skills-section" class="space-y-6 print-break-inside-avoid">
+            <div class="border-b border-stone-200 pb-4">
+                <div class="flex items-center gap-2 text-forest-700 font-mono text-xs uppercase tracking-widest font-semibold">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="sliders" aria-hidden="true" class="lucide lucide-sliders w-4 h-4"><path d="M10 8h4"></path><path d="M12 21v-9"></path><path d="M12 8V3"></path><path d="M17 16h4"></path><path d="M19 12V3"></path><path d="M19 21v-5"></path><path d="M3 14h4"></path><path d="M5 10V3"></path><path d="M5 21v-7"></path></svg>
+                    <span>Section 03 // Competencies &amp; Languages</span>
+                </div>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-forest-900 mt-1">Core Skills &amp; Multilingual Profile</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                
+                <!-- Left 7 Cols: Honest, Practical Skill Cards -->
+                <div class="lg:col-span-7 space-y-6">
+                    <!-- Business, Finance & Digital Workflow Skills -->
+                    <div data-category="industry" class="profile-card bg-white rounded-2xl p-6 border border-stone-200/90 shadow-sm space-y-5">
+                        <div class="flex items-center gap-2.5">
+                            <div class="p-2 rounded-lg bg-amber-50 text-ochre-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="briefcase" aria-hidden="true" class="lucide lucide-briefcase w-5 h-5"><path d="M16 20V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path><rect width="20" height="14" x="2" y="6" rx="2"></rect></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-serif text-xl font-bold text-stone-900">Finance, Property Operations &amp; Digital Tools</h3>
+                                <p class="text-[11px] font-mono text-stone-500">PRACTICAL PROFESSIONAL COMPETENCIES</p>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
+                            <div class="p-3.5 rounded-xl bg-ivory border border-stone-200/70">
+                                <div class="editable font-semibold text-xs sm:text-sm text-stone-900" contenteditable="true">Real Estate Accounting &amp; Billing</div>
+                                <p class="editable text-xs text-stone-500 mt-1" contenteditable="true">Invoicing, rent ledger management, financial tracking, and monthly reconciliations.</p>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-ivory border border-stone-200/70">
+                                <div class="editable font-semibold text-xs sm:text-sm text-stone-900" contenteditable="true">Utility Tariff &amp; Cost Modeling</div>
+                                <p class="editable text-xs text-stone-500 mt-1" contenteditable="true">Calculating commercial building utilities, meter allocations, and tenant billing.</p>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-ivory border border-stone-200/70">
+                                <div class="editable font-semibold text-xs sm:text-sm text-stone-900" contenteditable="true">AI-Assisted Workflow &amp; Vibe Coding</div>
+                                <p class="editable text-xs text-stone-500 mt-1" contenteditable="true">Using AI tools to automate spreadsheets, build simple web calculators, and structure data.</p>
+                            </div>
+                            <div class="p-3.5 rounded-xl bg-ivory border border-stone-200/70">
+                                <div class="editable font-semibold text-xs sm:text-sm text-stone-900" contenteditable="true">Property &amp; Floor Plan Administration</div>
+                                <p class="editable text-xs text-stone-500 mt-1" contenteditable="true">Tenant communication, contract organization, and commercial space layout coordination.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grounded Academic Geography & Sustainability Knowledge -->
+                    <div data-category="academic" class="profile-card bg-white rounded-2xl p-6 border border-stone-200/90 shadow-sm space-y-4">
+                        <div class="flex items-center gap-2.5">
+                            <div class="p-2 rounded-lg bg-forest-50 text-forest-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="globe-2" aria-hidden="true" class="lucide lucide-globe-2 w-5 h-5"><path d="M21.54 15H17a2 2 0 0 0-2 2v4.54"></path><path d="M7 3.34V5a3 3 0 0 0 3 3a2 2 0 0 1 2 2c0 1.1.9 2 2 2a2 2 0 0 0 2-2c0-1.1.9-2 2-2h3.17"></path><path d="M11 21.95V18a2 2 0 0 0-2-2a2 2 0 0 1-2-2v-1a2 2 0 0 0-2-2H2.05"></path><circle cx="12" cy="12" r="10"></circle></svg>
+                            </div>
+                            <div>
+                                <h3 class="font-serif text-xl font-bold text-stone-900">Academic &amp; Environmental Knowledge</h3>
+                                <p class="text-[11px] font-mono text-stone-500">B.SC. SCIENTIFIC GEOGRAPHY FOUNDATION</p>
+                            </div>
+                        </div>
+
+                        <p class="editable text-xs sm:text-sm text-stone-600 leading-relaxed" contenteditable="true">
+                            Solid university-level foundation in physical and socio-economic geography, environmental conservation principles, and sustainable resource management, with beginner/academic familiarity in thematic mapping and GIS software.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 pt-1">
+                            <span class="editable px-3 py-1 rounded-lg bg-forest-50 text-forest-800 border border-forest-100 text-xs font-medium" contenteditable="true">Physical &amp; Economic Geography</span>
+                            <span class="editable px-3 py-1 rounded-lg bg-forest-50 text-forest-800 border border-forest-100 text-xs font-medium" contenteditable="true">Environmental Management Basics</span>
+                            <span class="editable px-3 py-1 rounded-lg bg-forest-50 text-forest-800 border border-forest-100 text-xs font-medium" contenteditable="true">Sustainability &amp; ESG Concepts</span>
+                            <span class="editable px-3 py-1 rounded-lg bg-alabaster text-stone-700 border border-stone-200 text-xs font-medium" contenteditable="true">Foundational GIS &amp; Cartography (Beginner)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right 5 Cols: 5 Languages Card -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white rounded-2xl p-6 border border-stone-200/90 shadow-sm space-y-4 h-full flex flex-col justify-between">
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between border-b border-stone-100 pb-3">
+                                <div class="flex items-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="languages" aria-hidden="true" class="lucide lucide-languages w-5 h-5 text-forest-700"><path d="m5 8 6 6"></path><path d="m4 14 6-6 2-3"></path><path d="M2 5h12"></path><path d="M7 2h1"></path><path d="m22 22-5-10-5 10"></path><path d="M14 18h6"></path></svg>
+                                    <h3 class="font-serif text-xl font-bold text-stone-900">Languages</h3>
+                                </div>
+                                <span class="font-mono text-[11px] text-stone-400 uppercase">5 Languages</span>
+                            </div>
+
+                            <div class="space-y-3">
+                                <!-- Kazakh -->
+                                <div class="p-3.5 rounded-xl bg-ivory border border-stone-200/70 flex items-center justify-between">
+                                    <div>
+                                        <div class="font-serif font-bold text-base text-stone-900">Kazakh</div>
+                                        <div class="editable text-xs text-stone-500" contenteditable="true">Mother tongue • Academic &amp; Professional</div>
+                                    </div>
+                                    <span class="px-2.5 py-1 rounded-md bg-forest-700 text-white font-mono text-xs font-medium">Native</span>
+                                </div>
+
+                                <!-- Russian -->
+                                <div class="p-3.5 rounded-xl bg-ivory border border-stone-200/70 flex items-center justify-between">
+                                    <div>
+                                        <div class="font-serif font-bold text-base text-stone-900">Russian</div>
+                                        <div class="editable text-xs text-stone-500" contenteditable="true">Full professional &amp; financial fluency</div>
+                                    </div>
+                                    <span class="px-2.5 py-1 rounded-md bg-forest-700 text-white font-mono text-xs font-medium">Fluent / Bilingual</span>
+                                </div>
+
+                                <!-- English -->
+                                <div class="p-3.5 rounded-xl bg-forest-50/70 border border-forest-100 flex items-center justify-between">
+                                    <div>
+                                        <div class="font-serif font-bold text-base text-forest-900">English</div>
+                                        <div class="editable text-xs text-stone-600" contenteditable="true">Academic reading &amp; communication (IELTS Prep)</div>
+                                    </div>
+                                    <span class="editable px-2.5 py-1 rounded-md bg-white text-forest-800 border border-forest-100 font-mono text-xs font-medium" contenteditable="true">Academic / B2</span>
+                                </div>
+
+                                <!-- Korean -->
+                                <div class="p-3.5 rounded-xl bg-amber-50/50 border border-amber-200/60 flex items-center justify-between">
+                                    <div>
+                                        <div class="font-serif font-bold text-base text-stone-900">Korean</div>
+                                        <div class="editable text-xs text-stone-500" contenteditable="true">Elementary reading, vocabulary &amp; conversation</div>
+                                    </div>
+                                    <span class="editable px-2.5 py-1 rounded-md bg-white text-ochre-600 border border-amber-200 font-mono text-xs font-medium" contenteditable="true">Beginner (A2)</span>
+                                </div>
+
+                                <!-- Spanish -->
+                                <div class="p-3.5 rounded-xl bg-amber-50/50 border border-amber-200/60 flex items-center justify-between">
+                                    <div>
+                                        <div class="font-serif font-bold text-base text-stone-900">Spanish</div>
+                                        <div class="editable text-xs text-stone-500" contenteditable="true">Elementary grammar &amp; conversational basics</div>
+                                    </div>
+                                    <span class="editable px-2.5 py-1 rounded-md bg-white text-ochre-600 border border-amber-200 font-mono text-xs font-medium" contenteditable="true">Beginner (A2)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="editable text-[11px] text-stone-400 font-mono pt-3 border-t border-stone-100" contenteditable="true">
+                            Enjoys cross-cultural communication and continuous foreign language study alongside university and work commitments.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 04: CONTACT & CORRESPONDENCE -->
+        <section id="contact-section" class="rounded-3xl bg-forest-900 text-ivory p-6 sm:p-10 lg:p-12 shadow-md relative overflow-hidden print-break-inside-avoid">
+            <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-7 space-y-3">
+                    <span class="font-mono text-xs uppercase tracking-widest text-ochre-400 font-semibold block">
+                        Section 04 // Contact &amp; Correspondence
+                    </span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">
+                        Open to Master's Admissions &amp; Professional Opportunities
+                    </h2>
+                    <p class="editable text-stone-300 text-xs sm:text-sm leading-relaxed max-w-xl" contenteditable="true">
+                        Thank you for reviewing my profile. Please feel free to reach out via email or Telegram for academic inquiries, university admissions interviews, or professional collaboration.
+                    </p>
+                    <div class="pt-2 flex flex-wrap gap-3 no-print">
+                        <button onclick="openContactModal()" class="px-4 py-2 rounded-xl bg-ochre-500 hover:bg-ochre-600 text-white text-xs font-semibold flex items-center gap-2 transition shadow-sm">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="settings-2" aria-hidden="true" class="lucide lucide-settings-2 w-4 h-4"><path d="M14 17H5"></path><path d="M19 7h-9"></path><circle cx="17" cy="17" r="3"></circle><circle cx="7" cy="7" r="3"></circle></svg>
+                            Edit Contact Details
+                        </button>
+                        <button onclick="copyEmailAddress()" class="px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-white border border-white/15 text-xs font-medium flex items-center gap-2 transition">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="copy" aria-hidden="true" class="lucide lucide-copy w-4 h-4 text-ochre-400"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
+                            <span id="copy-email-label">Copy Email Address</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Contact Details Grid -->
+                <div class="lg:col-span-5 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-5 sm:p-6 space-y-4 text-xs sm:text-sm">
+                    <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                        <span class="text-stone-400 font-mono text-xs">DIRECT CHANNELS</span>
+                        <span class="text-emerald-400 font-mono text-xs flex items-center gap-1.5">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400"></span> Astana, KZ (GMT+5)
+                        </span>
+                    </div>
+
+                    <div class="space-y-3">
+                        <div class="flex items-center justify-between gap-2">
+                            <span class="text-stone-400 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="mail" aria-hidden="true" class="lucide lucide-mail w-4 h-4 text-ochre-400"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"></path><rect x="2" y="4" width="20" height="16" rx="2"></rect></svg> Email:
+                            </span>
+                            <span id="contact-email" class="editable font-mono text-white font-medium" contenteditable="true">saidilla05@mail.ru</span>
+                        </div>
+                        <div class="flex items-center justify-between gap-2">
+                            <span class="text-stone-400 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="send" aria-hidden="true" class="lucide lucide-send w-4 h-4 text-ochre-400"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"></path><path d="m21.854 2.147-10.94 10.939"></path></svg> Telegram:
+                            </span>
+                            <span id="contact-phone" class="editable font-mono text-white font-medium" contenteditable="true">@sdlvas</span>
+                        </div>
+                        <div class="flex items-center justify-between gap-2">
+                            <span class="text-stone-400 flex items-center gap-2">
+                                <i data-lucide="linkedin" class="w-4 h-4 text-ochre-400"></i> LinkedIn:
+                            </span>
+                            <span id="contact-linkedin" class="editable font-mono text-white font-medium" contenteditable="true">linkedin.com/in/assel-saidilla</span>
+                        </div>
+                        <div class="flex items-center justify-between gap-2">
+                            <span class="text-stone-400 flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="map-pin" aria-hidden="true" class="lucide lucide-map-pin w-4 h-4 text-ochre-400"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"></path><circle cx="12" cy="10" r="3"></circle></svg> Location:
+                            </span>
+                            <span id="contact-uni" class="editable font-mono text-white font-medium" contenteditable="true">Astana, Kazakhstan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Quick Contact Details Customizer Modal -->
+    <div id="contact-modal" class="fixed inset-0 z-50 hidden bg-stone-900/60 backdrop-blur-sm flex items-center justify-center p-4 no-print">
+        <div class="bg-white rounded-2xl max-w-md w-full p-6 border border-stone-200 shadow-xl space-y-5">
+            <div class="flex items-center justify-between border-b border-stone-100 pb-3">
+                <div>
+                    <h3 class="font-serif text-2xl font-bold text-forest-900">Personalize Contact Info</h3>
+                    <p class="text-xs text-stone-500">Update your exact contact details before printing or sharing</p>
+                </div>
+                <button onclick="closeContactModal()" class="p-1.5 rounded-lg text-stone-400 hover:text-stone-700 hover:bg-stone-100">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" data-lucide="x" aria-hidden="true" class="lucide lucide-x w-5 h-5"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+                </button>
+            </div>
+
+            <div class="space-y-3 text-xs sm:text-sm">
+                <div>
+                    <label class="block text-xs font-mono uppercase text-stone-500 mb-1">Email Address</label>
+                    <input type="email" id="input-email" class="w-full px-3 py-2 rounded-lg border border-stone-300 focus:outline-none focus:border-forest-700 font-mono text-sm" value="saidilla05@mail.ru">
+                </div>
+                <div>
+                    <label class="block text-xs font-mono uppercase text-stone-500 mb-1">Telegram / Phone</label>
+                    <input type="text" id="input-phone" class="w-full px-3 py-2 rounded-lg border border-stone-300 focus:outline-none focus:border-forest-700 font-mono text-sm" value="@sdlvas">
+                </div>
+                <div>
+                    <label class="block text-xs font-mono uppercase text-stone-500 mb-1">LinkedIn URL</label>
+                    <input type="text" id="input-linkedin" class="w-full px-3 py-2 rounded-lg border border-stone-300 focus:outline-none focus:border-forest-700 font-mono text-sm" value="linkedin.com/in/assel-saidilla">
+                </div>
+                <div>
+                    <label class="block text-xs font-mono uppercase text-stone-500 mb-1">Location / University</label>
+                    <input type="text" id="input-uni" class="w-full px-3 py-2 rounded-lg border border-stone-300 focus:outline-none focus:border-forest-700 font-mono text-sm" value="Astana, Kazakhstan">
+                </div>
+            </div>
+
+            <div class="flex items-center justify-end gap-2 pt-2">
+                <button onclick="closeContactModal()" class="px-4 py-2 rounded-lg text-xs font-medium text-stone-600 hover:bg-stone-100">Cancel</button>
+                <button onclick="saveContactDetails()" class="px-4 py-2 rounded-lg text-xs font-medium bg-forest-700 hover:bg-forest-800 text-white shadow-sm">Apply Changes</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Audience Perspective Switcher (All / Academic / Industry)
+        function setViewMode(mode) {
+            const cards = document.querySelectorAll('.profile-card');
+            const modes = ['all', 'academic', 'industry'];
+
+            modes.forEach(m => {
+                const dBtn = document.getElementById(`btn-mode-${m}`);
+                const mBtn = document.getElementById(`m-btn-mode-${m}`);
+                if (m === mode) {
+                    if (dBtn) {
+                        dBtn.classList.add('bg-forest-700', 'text-white', 'shadow-sm');
+                        dBtn.classList.remove('text-stone-600');
+                    }
+                    if (mBtn) {
+                        mBtn.classList.add('bg-forest-700', 'text-white');
+                        mBtn.classList.remove('text-stone-600');
+                    }
+                } else {
+                    if (dBtn) {
+                        dBtn.classList.remove('bg-forest-700', 'text-white', 'shadow-sm');
+                        dBtn.classList.add('text-stone-600');
+                    }
+                    if (mBtn) {
+                        mBtn.classList.remove('bg-forest-700', 'text-white');
+                        mBtn.classList.add('text-stone-600');
+                    }
+                }
+            });
+
+            cards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                card.classList.remove('dimmed-section', 'highlighted-section');
+
+                if (mode !== 'all') {
+                    if (category === mode) {
+                        card.classList.add('highlighted-section');
+                    } else {
+                        card.classList.add('dimmed-section');
+                    }
+                }
+            });
+        }
+
+        // Toggle Inline ContentEditable Mode
+        let inlineEditActive = false;
+        function toggleInlineEdit() {
+            inlineEditActive = !inlineEditActive;
+            const editables = document.querySelectorAll('.editable');
+            const banner = document.getElementById('edit-mode-banner');
+            const label = document.getElementById('edit-btn-label');
+
+            editables.forEach(el => {
+                el.setAttribute('contenteditable', inlineEditActive ? 'true' : 'false');
+            });
+
+            if (inlineEditActive) {
+                banner.classList.remove('hidden');
+                if (label) label.textContent = 'Finish Editing';
+            } else {
+                banner.classList.add('hidden');
+                if (label) label.textContent = 'Customize Text';
+            }
+        }
+
+        // Contact Details Modal Logic
+        function openContactModal() {
+            document.getElementById('input-email').value = document.getElementById('contact-email').textContent.trim();
+            document.getElementById('input-phone').value = document.getElementById('contact-phone').textContent.trim();
+            document.getElementById('input-linkedin').value = document.getElementById('contact-linkedin').textContent.trim();
+            document.getElementById('input-uni').value = document.getElementById('contact-uni').textContent.trim();
+            document.getElementById('contact-modal').classList.remove('hidden');
+        }
+
+        function closeContactModal() {
+            document.getElementById('contact-modal').classList.add('hidden');
+        }
+
+        function saveContactDetails() {
+            document.getElementById('contact-email').textContent = document.getElementById('input-email').value.trim();
+            document.getElementById('contact-phone').textContent = document.getElementById('input-phone').value.trim();
+            document.getElementById('contact-linkedin').textContent = document.getElementById('input-linkedin').value.trim();
+            document.getElementById('contact-uni').textContent = document.getElementById('input-uni').value.trim();
+            closeContactModal();
+        }
+
+        // Copy Email to Clipboard
+        function copyEmailAddress() {
+            const emailText = document.getElementById('contact-email').textContent.trim();
+            const tempInput = document.createElement('textarea');
+            tempInput.value = emailText;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            const label = document.getElementById('copy-email-label');
+            const original = label.textContent;
+            label.textContent = 'Copied: ' + emailText;
+            setTimeout(() => {
+                label.textContent = original;
+            }, 2500);
+        }
+    </script>
+
+</body></html>
